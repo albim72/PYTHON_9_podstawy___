@@ -35,3 +35,13 @@ komentarz dokumentacyjny wieloliniowy
 linia2 - > dwa słowa
 linia3 -> o dokumentacji....
 """
+
+a:int = 17
+print(a)
+print(type(a))
+print(id(a))
+
+a = "liczba a"
+print(a)
+print(type(a))
+print(id(a))
