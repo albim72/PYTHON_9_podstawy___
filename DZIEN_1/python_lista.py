@@ -47,3 +47,13 @@ for element in p2:
 print(powtorzenie)
 print(p2)
 
+sklepzoo = [["pies","kot","papuga","mysz"],[4500,2500,900,45]]
+print(sklepzoo[0])
+print(sklepzoo[0][1])
+print(sklepzoo[0][1], "-",  sklepzoo[1][1])
+
+sklepzoo_2 = [[["buldog angielski","Wyżeł Weimarski","Owczarek Podhalański"],"kot","papuga","mysz"],
+            [[7500,6500,4500],2500,900,45]]
+
+print(sklepzoo_2[0][0][0],"-",sklepzoo_2[1][0][0])
+
