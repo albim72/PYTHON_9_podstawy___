@@ -57,3 +57,14 @@ sklepzoo_2 = [[["buldog angielski","Wyżeł Weimarski","Owczarek Podhalański"],
 
 print(sklepzoo_2[0][0][0],"-",sklepzoo_2[1][0][0])
 
+miasta = ["Gdańsk","Lublin","Wrocław","Katowice"]
+stolica = ["Warszawa","Rzym","Londyn"]
+
+miasta = miasta + stolica #konkatenacja - łączenie list (+)
+print(miasta)
+
+miasta = miasta + ["Zamośc", "Koszalin"]
+print(miasta)
+
+miasta = miasta * 3
+print(miasta)
