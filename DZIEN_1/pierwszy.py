@@ -30,3 +30,8 @@ typ_bytearray = bytearray(b'Witaj ByteArray!')
 typ_bytearray[0] = 104 #kod ASCII litery h
 print(f"zmodyfikowany type bytearray: {typ_bytearray}")
 
+"""
+komentarz dokumentacyjny wieloliniowy
+linia2 - > dwa słowa
+linia3 -> o dokumentacji....
+"""
