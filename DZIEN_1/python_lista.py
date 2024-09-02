@@ -27,3 +27,20 @@ print(liczby)
 
 powtorzenie = [2,3,5,6,8,3,9,6,4,3,2,5,7,4,3,5,3,6,3]
 
+lista_bez_duplikatow = []
+for element in powtorzenie:
+    if element not in lista_bez_duplikatow:
+        lista_bez_duplikatow.append(element)
+lista_bez_duplikatow.remove(3)
+print(powtorzenie)
+print(lista_bez_duplikatow)
+
+wartosc = 3
+p2 = powtorzenie.copy()
+for element in p2:
+    if element == 3:
+        p2.remove(wartosc)
+
+print(powtorzenie)
+print(p2)
+
