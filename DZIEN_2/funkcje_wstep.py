@@ -62,3 +62,27 @@ print(pomnoz())
 print(pomnoz("gsdf"))
 
 
+#przykład 7 - funkcja z dokumentacją
+"""
+ważny komentarz
+"""
+
+def skladowe_liczby(a,b):
+    """
+    opis składowych w obliczeniu odejmowania a-b
+    :param a: wartośc całkowita dodatnia
+    :param b: wartośc całkowita doadtnia lub zmiennoprzecinkowa nieujemna
+    :return: wynik w typie int lub float (numbers)
+    """
+
+    """
+    drugi komentarz dla a-b!
+    """
+
+    return a-b
+print("odejmowanie a-b:")
+print(skladowe_liczby(6,4))
+print(skladowe_liczby.__doc__)
+
+#pierwszy komnentarz w  otwartej strukturze kodu jest
+#komentarzem dokumentacyjnym (automatycznie jest przekazywany do dokumentacji)
