@@ -46,3 +46,5 @@ print(f"Informacje o Warszawie: {info_wawa}")
 pop_krakow = miasto["Kraków"]["populacja"]
 print(f"populacja w Krakowie: {pop_krakow}")
 
+info_dwa = miasto["Kraków"],miasto["Gdańsk"]
+print(info_dwa)
