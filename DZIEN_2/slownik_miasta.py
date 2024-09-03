@@ -67,3 +67,18 @@ print(f'miasta Polski: {miasto}')
 miasto_wroclaw = miasto.pop("Wrocław")
 print(f"miasta po usunięciu Wrocławia: {miasto}")
 print(f"Usunięte miasto: {miasto_wroclaw}")
+
+#iterowanie po kluczach
+print("Lista miast:")
+for m in miasto.keys():
+    print(m)
+
+#iterowanie po wartościach
+print(f"\ninformacje o miastach:")
+for info in miasto.values():
+    print(info)
+
+#iterowanie po parach klucz - wartośc:
+print(f"\nmiasta Polski i informacje o nich:")
+for m,inf in miasto.items():
+    print(f"{m} -> {inf}")
