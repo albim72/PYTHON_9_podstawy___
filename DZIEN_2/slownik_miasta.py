@@ -48,3 +48,12 @@ print(f"populacja w Krakowie: {pop_krakow}")
 
 info_dwa = miasto["Kraków"],miasto["Gdańsk"]
 print(info_dwa)
+
+#dodawanie nowego miasta do słownika
+miasto["Poznań"] = {
+        "województwo":"wielkopolskie",
+        "populacja":534600,
+        "powierzchnia":261.98
+    }
+
+print(f'miasta Polski: {miasto}')
