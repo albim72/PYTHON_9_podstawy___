@@ -33,3 +33,12 @@ def policz_cos(w,k,p):
 print(policz_cos(3,5,7))
 wynik = 505 + policz_cos(1,2,3)
 print(wynik)
+
+#przykład 5 - funkcja z wartościami domyślnymi
+def greet(name,greetings = "Witaj",znak="."):
+    print(f"{greetings} {name}{znak}")
+
+greet("Anna")
+greet("Olaf","Sie ma")
+greet("Olaf","Sie ma","!")
+greet("Maria",znak="!!!")
