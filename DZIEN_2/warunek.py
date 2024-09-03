@@ -49,3 +49,25 @@ print("\n________ przykład 5_________")
 liczba = -3
 wynik = "dodatnia" if liczba > 0 else "ujemna lub zerowa"
 print(f"liczba jest {wynik}")
+
+#przykład 6 -> Match ... case
+print("\n________ przykład 6_________")
+print("klasyfikator miast")
+
+l_miesz = 340_000
+
+match l_miesz:
+    case n if n > 1_000_000:
+        print(f"Miasto o liczbie mieszkańców powżej 1 mln")
+    case n if 500_000 < n <= 1_000_000:
+        print(f"Miasto o liczbie mieszkańców 500 tyś do 1 mln")
+    case n if 200_000 < n <= 500_000:
+        print(f"Miasto o liczbie mieszkańców 200 tyś do 500 tyś")
+    case n if 100_000 < n <= 200_000:
+        print(f"Miasto o liczbie mieszkańców 100 tyś do 100 tyś")
+    case _:
+        print(f"Miasto o liczbie mieszkańców mniejszej niż 100 tyś")
+
+
+
+
