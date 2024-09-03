@@ -35,10 +35,30 @@ wynik = 505 + policz_cos(1,2,3)
 print(wynik)
 
 #przykład 5 - funkcja z wartościami domyślnymi
-def greet(name,greetings = "Witaj",znak="."):
-    print(f"{greetings} {name}{znak}")
+#name - imię osoby
+#greetings  - tekst pozdrowień
+#sign - znak interpunkcyjny na końcu wypowiedzi...
+def greet(name,greetings = "Witaj",sign="."):
+    print(f"{greetings} {name}{sign}")
 
 greet("Anna")
 greet("Olaf","Sie ma")
 greet("Olaf","Sie ma","!")
-greet("Maria",znak="!!!")
+greet("Maria",sign="!!!")
+
+#przykład 6 - funkcja z arbitralną liczbą argumentów
+# *args -> lista argumentów o dowolnej dlugości
+def pomnoz(*args):
+    wynik = 1
+    for num in args:
+        wynik *= num
+    return wynik
+
+print(pomnoz(4,1,8))
+print(pomnoz(8,19,1,3,5,78,4))
+print(pomnoz(4.77,1,3.009))
+print(pomnoz(4))
+print(pomnoz())
+print(pomnoz("gsdf"))
+
+
