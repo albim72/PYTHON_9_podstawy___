@@ -35,3 +35,13 @@ print("_"*60)
 
 for index,miasto in enumerate(miasta,101):
     print(f"index: {index}, miasto: {miasto}")
+
+
+#przykład 5 - pętla z użyciem 'break' i 'continue
+print("_"*60)
+for i in range(1,11):
+    if i==6:
+        continue
+    if i==8:
+        break
+    print(i)
