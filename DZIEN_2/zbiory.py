@@ -43,7 +43,7 @@ print(roznica)
 roz_symetryczna = drzewa ^ inne_drzewa
 print(roz_symetryczna)
 
-#utworzenie listy unikatów na podstawie listy z powtórzeniami z użciem funkcji st - list
+#utworzenie listy unikatów na podstawie listy z powtórzeniami z użciem funkcji set - list
 nb = [5,2,67,3,2,1,5,64,7,33,56,33,2,2,2,6,8,2,33,1,56]
 print(nb)
 set_nb = set(nb)
@@ -51,3 +51,14 @@ print(set_nb)
 
 nb = list(set_nb)
 print(nb)
+
+#zbiór niemutowalnny - frozenset
+frozen_drzewa = frozenset(drzewa)
+print(frozen_drzewa)
+super_drzewa = {"magnolia","sekwoja"}
+frozen_drzewa.union(super_drzewa)
+print(frozen_drzewa)
+
+#odmrożenie zbioru
+sdrzewa = set(frozen_drzewa)
+print(sdrzewa)
