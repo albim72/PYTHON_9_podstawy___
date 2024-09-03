@@ -29,7 +29,17 @@ elif liczba < 0:
     print("liczba jest ujemna")
 else:
     print("liczba jest równa 0")
-    
+
 #przykład 4 - zagnieżdzone instrukcje if
 
 print("\n________ przykład 4_________")
+liczba = -4
+if liczba > 0:
+    print("liczba jest dodatnia")
+    if liczba % 2 == 0:
+        print("liczba jest parzysta")
+    else:
+        print("liczba jest nieparzysta")
+else:
+    print("liczba jest ujmena lub równa 0")
+
