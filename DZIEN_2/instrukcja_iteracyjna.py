@@ -22,9 +22,10 @@ while licznik <= 6:
     print(licznik)
     licznik += 1
 
-# while True:
-#     print(licznik)
-#     licznik += 1
+k = 1
+while k<1000:
+    print(k)
+    k += 1
 
 #przykład 4 - pętla for z użyciem funkcji enumerate()
 print("_"*60)
@@ -39,7 +40,7 @@ for index,miasto in enumerate(miasta,101):
 
 #przykład 5 - pętla z użyciem 'break' i 'continue
 print("_"*60)
-for i in range(1,11):
+for i in range(1,11,3):
     if i==6:
         continue
     if i==8:
