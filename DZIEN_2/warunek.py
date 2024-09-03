@@ -43,3 +43,9 @@ if liczba > 0:
 else:
     print("liczba jest ujmena lub równa 0")
 
+
+#przykład 5 -> Ternary Operator (Operator trójskładnikowy)
+print("\n________ przykład 5_________")
+liczba = -3
+wynik = "dodatnia" if liczba > 0 else "ujemna lub zerowa"
+print(f"liczba jest {wynik}")
