@@ -57,3 +57,13 @@ miasto["Poznań"] = {
     }
 
 print(f'miasta Polski: {miasto}')
+
+#usuwanie elementów ze słownika
+#usunięcie miasta Gdańsk
+del miasto["Gdańsk"]
+print(f'miasta Polski: {miasto}')
+
+#usunięcie miasta Wocław za pomocą metody pop
+miasto_wroclaw = miasto.pop("Wrocław")
+print(f"miasta po usunięciu Wrocławia: {miasto}")
+print(f"Usunięte miasto: {miasto_wroclaw}")
