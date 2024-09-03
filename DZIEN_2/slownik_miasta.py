@@ -38,3 +38,11 @@ miasto = {
         "powierzchnia":262
     }
 }
+
+print(f'miasta Polski: {miasto}')
+info_wawa = miasto["Warszawa"]
+print(f"Informacje o Warszawie: {info_wawa}")
+
+pop_krakow = miasto["Kraków"]["populacja"]
+print(f"populacja w Krakowie: {pop_krakow}")
+
