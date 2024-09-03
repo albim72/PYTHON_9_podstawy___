@@ -25,3 +25,13 @@ while licznik <= 6:
 # while True:
 #     print(licznik)
 #     licznik += 1
+
+#przykład 4 - pętla for z użyciem funkcji enumerate()
+print("_"*60)
+
+# for miasto in miasta:
+#     index = miasta.index(miasto)
+#     print(f"index: {index}, miasto: {miasto}")
+
+for index,miasto in enumerate(miasta,101):
+    print(f"index: {index}, miasto: {miasto}")
