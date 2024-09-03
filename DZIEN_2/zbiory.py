@@ -42,3 +42,5 @@ print(roznica)
 #różnica symetryczna - elementy które są w jednym zbiorze lub drugim ale nie ma ich w obu jednocześnie
 roz_symetryczna = drzewa ^ inne_drzewa
 print(roz_symetryczna)
+
+nb = [5,2,67,3,2,1,5,64,7,33,56,33,2,2,2,6,8,2,33,1,56]
