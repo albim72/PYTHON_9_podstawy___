@@ -43,4 +43,11 @@ print(roznica)
 roz_symetryczna = drzewa ^ inne_drzewa
 print(roz_symetryczna)
 
+#utworzenie listy unikatów na podstawie listy z powtórzeniami z użciem funkcji st - list
 nb = [5,2,67,3,2,1,5,64,7,33,56,33,2,2,2,6,8,2,33,1,56]
+print(nb)
+set_nb = set(nb)
+print(set_nb)
+
+nb = list(set_nb)
+print(nb)
