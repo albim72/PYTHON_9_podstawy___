@@ -1,18 +1,17 @@
 class Osoba:
-    #uzupełnij według zadania
-    pass
-
-class Sportowiec:
-    # uzupełnij według zadania
-    pass
-
-class Zawodnik(Osoba,Sportowiec):
-    #zmodyfikuj konstrukotr żeby był spójny z dziedziczeniem - zgodnie z treścią zadania
-    def __init__(self, imie, nazwisko, dyscyplina, wynik):
+    def __init__(self, imie, nazwisko):
         self.imie = imie
         self.nazwisko = nazwisko
+
+class Sportowiec:
+    def __init__(self, dyscyplina, wynik):
         self.dyscyplina = dyscyplina
         self.wynik = wynik
+
+class Zawodnik(Osoba, Sportowiec):
+    def __init__(self, imie, nazwisko, dyscyplina, wynik):
+        Osoba.__init__(self, imie, nazwisko)
+        Sportowiec.__init__(self, dyscyplina, wynik)
 
     def przedstaw_siebie(self):
         return f"{self.imie} {self.nazwisko}, dyscyplina: {self.dyscyplina}, wynik: {self.wynik}"
