@@ -85,4 +85,40 @@ print(f'Pole kwadratu: {square.area()} cm2')
 print(f'Obwód kwadratu: {square.perimeter()} cm')
 print(f'Przekątna kwadratu: {square.squarediagonal():.3f} cm')
 
+#przykład 4  - enkapsulacja - prywatne atrybuty
+class BankAccount:
+    def __init__(self,balance,special_amount):
+        self.__balance = balance
+        self._special = special_amount
 
+    #wpłata środków na konto
+    def deposit(self,amount):
+        if amount > 0:
+            self.__balance += amount
+
+    #wypłata środków z konta
+    def withdraw(self,amount):
+        if 0<amount<=self.__balance:
+            self.__balance -= amount
+
+    #wyświetlanie stanu konta
+    def get_balance(self):
+        return self.__balance
+
+
+print("*"*70)
+print("\033[4;34mPrzykład 4\033[0m")
+
+acc = BankAccount(800,100)
+acc.deposit(1600)
+print(f'stan konta po dokonaniu wpłaty: {acc.get_balance()} zł')
+acc.withdraw(437)
+print(f'stan konta po dokonaniu wypłaty: {acc.get_balance()} zł')
+print("czy fizycznie zmienna __balance jest prywatna - niedostępna z poziomu programu??")
+# print(acc.__balance)
+# print(BankAccount.__balance)
+print("nie ma dostępu do zmiennej __balance!!!")
+print("Czy mam dostęp do _special?")
+print(acc._special)
+print("tak! _special daje dostęp obiektowi do siebie")
+# _ - protected,  __ - private
