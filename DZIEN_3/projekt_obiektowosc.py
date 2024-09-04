@@ -86,6 +86,7 @@ print(f'Obwód kwadratu: {square.perimeter()} cm')
 print(f'Przekątna kwadratu: {square.squarediagonal():.3f} cm')
 
 #przykład 4  - enkapsulacja - prywatne atrybuty
+#ukrycie szczegółów implementacji przed użutkownikiem klasy - wystawienie metod!
 class BankAccount:
     def __init__(self,balance,special_amount):
         self.__balance = balance
