@@ -123,3 +123,32 @@ print("Czy mam dostęp do _special?")
 print(acc._special)
 print("tak! _special daje dostęp obiektowi do siebie")
 # _ - protected,  __ - private
+
+#przykład 5  - polimorfizm - różne klasy z tą samą metodą!
+class Dog:
+    def speak(self):
+        return "Hau!"
+
+class Cat:
+    def speak(self):
+        return "Miau!"
+
+class Cow:
+    def speak(self):
+        return "Muuu!"
+
+#funkcja która wywołuje metodę speak
+def animal_sound(animal):
+    print(animal.speak())
+
+#użycie polimorfizmu
+print("*"*70)
+print("\033[4;34mPrzykład 5\033[0m")
+
+dog = Dog()
+cat = Cat()
+cow = Cow()
+
+animal_sound(dog)
+animal_sound(cat)
+animal_sound(cow)
