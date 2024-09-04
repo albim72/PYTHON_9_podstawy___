@@ -1,4 +1,13 @@
-class Zawodnik:
+class Osoba:
+    #uzupełnij według zadania
+    pass
+
+class Sportowiec:
+    # uzupełnij według zadania
+    pass
+
+class Zawodnik(Osoba,Sportowiec):
+    #zmodyfikuj konstrukotr żeby był spójny z dziedziczeniem - zgodnie z treścią zadania
     def __init__(self, imie, nazwisko, dyscyplina, wynik):
         self.imie = imie
         self.nazwisko = nazwisko
