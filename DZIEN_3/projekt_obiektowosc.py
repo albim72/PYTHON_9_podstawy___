@@ -1,3 +1,4 @@
+import math
 #przykład 1  - podstawowa klasa Rectangle
 class Rectangle:
     #funkcja init() definiuje przyszłe obiekty
@@ -66,4 +67,22 @@ rec2= Rectangle(68,26)
 print(rec2)
 print(f'Pole prostokąta: {rec2.area()} cm2')
 print(f'Obwód prostokąta: {rec2.perimeter()} cm')
+
+#przykład 3  - dziedziczenie klasy Rectangle przez klasę Square
+class Square(Rectangle):
+    def __init__(self,side_length):
+        super().__init__(side_length,side_length)
+
+    def squarediagonal(self):
+        return self.width*math.sqrt(2)
+
+print("*"*70)
+print("\033[4;34mPrzykład 3\033[0m")
+
+square = Square(6)
+print(square)
+print(f'Pole kwadratu: {square.area()} cm2')
+print(f'Obwód kwadratu: {square.perimeter()} cm')
+print(f'Przekątna kwadratu: {square.squarediagonal():.3f} cm')
+
 
