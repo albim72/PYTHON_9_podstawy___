@@ -1,6 +1,7 @@
 import math
 from singleton import Singleton
 from licznik_call import Licznikwywolan,FunkcjaLiniowa
+from punkty_abs import Punkt
 
 if __name__ == '__main__':
     #klasa jednoinstancyjna math
@@ -41,3 +42,16 @@ if __name__ == '__main__':
     funkcja = FunkcjaLiniowa(2,3)
     print(funkcja(5))
     print(funkcja(15))
+
+    # test działania klasy Punkt
+    punkt1 = Punkt(3,4)
+    print(punkt1)
+
+    odleglosc1 = abs(punkt1)
+    print(f"odległośc punktu od (0,0) wynosi: {odleglosc1}")
+
+    punkt2 = Punkt(-11, 9)
+    print(punkt2)
+
+    odleglosc2 = abs(punkt2)
+    print(f"odległośc punktu od (0,0) wynosi: {odleglosc2}")
