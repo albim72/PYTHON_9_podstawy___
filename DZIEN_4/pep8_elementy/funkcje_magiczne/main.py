@@ -1,4 +1,5 @@
 import math
+from singleton import Singleton
 
 if __name__ == '__main__':
     #klasa jednoinstancyjna math
@@ -13,5 +14,16 @@ if __name__ == '__main__':
     # print(id(m2))
     #
     # print(m1 is m2)
-    
-    
+
+    #test działania klasy Singleton
+    ob1 = Singleton()
+    ob2 = Singleton()
+
+    print(ob1 is ob2)
+
+    ob1.dane = "Zmieniono dane!"
+
+    print(f'dane obiekt ob1 -> {ob1.dane}')
+    print(f'dane obiekt ob2 -> {ob2.dane}')
+
+
