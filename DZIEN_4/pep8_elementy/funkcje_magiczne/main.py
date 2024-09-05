@@ -1,5 +1,6 @@
 import math
 from singleton import Singleton
+from licznik_call import Licznikwywolan,FunkcjaLiniowa
 
 if __name__ == '__main__':
     #klasa jednoinstancyjna math
@@ -26,4 +27,17 @@ if __name__ == '__main__':
     print(f'dane obiekt ob1 -> {ob1.dane}')
     print(f'dane obiekt ob2 -> {ob2.dane}')
 
+    # test działania klasy Licznikwywolan
+    licznik = Licznikwywolan()
 
+    print("\nwykoanie funkcji __call__ - obiekt zachowuje się jak funkcja")
+    licznik()
+    licznik()
+    licznik()
+    licznik()
+
+    # test działania klasy FunkcjaLiniowa
+    print("\nfunkcja liniowa:")
+    funkcja = FunkcjaLiniowa(2,3)
+    print(funkcja(5))
+    print(funkcja(15))
