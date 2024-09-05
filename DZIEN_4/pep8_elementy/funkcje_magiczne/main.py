@@ -2,6 +2,7 @@ import math
 from singleton import Singleton
 from licznik_call import Licznikwywolan,FunkcjaLiniowa
 from punkty_abs import Punkt
+from funkcja_invert import Liczby
 
 if __name__ == '__main__':
     #klasa jednoinstancyjna math
@@ -55,3 +56,11 @@ if __name__ == '__main__':
 
     odleglosc2 = abs(punkt2)
     print(f"odległośc punktu od (0,0) wynosi: {odleglosc2}")
+
+    # test działania klasy Liczby
+
+    liczby = Liczby([1,4,6,-7,0,9,-3,1,-67])
+    print(liczby)
+
+    odwrocone_liczby = ~liczby
+    print(odwrocone_liczby)
