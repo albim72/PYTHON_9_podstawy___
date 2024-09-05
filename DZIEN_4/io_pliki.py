@@ -1,4 +1,5 @@
 import os
+import shutil
 
 f = open("dane.txt","r",encoding="utf-8")
 print(f.readline())
@@ -36,3 +37,12 @@ if os.path.exists("info.txt"):
     print("plik został usunięty!")
 else:
     print("plik nie istnieje!")
+
+#usuwanie wielu plików
+sciezka_do_plikow = "./mojepliki"
+if os.path.exists(sciezka_do_plikow):
+    shutil.rmtree(sciezka_do_plikow)
+    print("katalog z danymi został usunięty!")
+else:
+    print("katalog nie istnieje!")
+
