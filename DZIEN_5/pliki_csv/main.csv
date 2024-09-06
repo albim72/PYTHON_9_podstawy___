@@ -14,3 +14,19 @@ with open("firma.csv",encoding="utf-8") as pc:
     print("_"*50)
     print( f"dodano {line_count} linii")
     print( f"dodano {line_count-1} osób")
+
+print("_"*50)
+print("Jak tworzyc nowy plik csv?")
+
+dane = [
+    ['Karol','Kret','Finanse',10],
+    ['Henryk','Kos','Finanse',8],
+    ['Anna','Nowik','IT',3],
+    ['Olek','Ryś','IT',6],
+    ['Nadia','Turek','Logistyka',9]
+]
+
+with open("pracownik.csv","w",encoding="utf-8",newline="") as ef:
+    emp_writer = csv.writer(ef,delimiter=",",quotechar='"',quoting=csv.QUOTE_NONNUMERIC)
+    emp_writer.writerows(dane)
+
